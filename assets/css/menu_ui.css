@@ -1,0 +1,47 @@
+/* Containerize.Menu */
+.footerbottom {
+  background: #5d21d2 !important;
+}
+.footer2anchor,
+.footer2col {
+  background: #301c6b !important;
+}
+.footer2col p {
+  font-family: "Red Hat Display", sans-serif;
+  color: #f4f8fe!important;
+}
+.footerbottom .bottomenuitems ul li a {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.sep1 {
+  display: none;
+}
+.footercol .socialicon a i {
+  filter: brightness(100);
+}
+
+@media (max-width: 1024px) {
+  /* Containerize.Menu */
+  .footer2col p {
+    font-family: "Red Hat Display", sans-serif;
+    background: #301c6b !important;
+    color: #f4f8fe;
+  }
+}
+@media (max-width: 768px) {
+  .bottomenuitems ul li {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 668px) {
+  /* Containerize.Menu */
+  .bottomenuitems ul li {
+    width: 100%;
+    margin: 0 0 15px !important;
+  }
+}
