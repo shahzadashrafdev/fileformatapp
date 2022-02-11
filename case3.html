@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Free FileFormat Apps - Process MS Word | PDF | Excel | PPT online</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://www.fileformat.com/templates/fileformat/favicon.ico" rel="shortcut icon"
+    type="image/vnd.microsoft.icon" />
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/menu_ui.css" rel="stylesheet">
+    <link href="assets/css/fileformat.css" rel="stylesheet">
+    <style>.fileformat .venturelogo a {
+      width:200px!important;
+      margin-top: 10px!important;
+      background-size: 200px!important;
+  }
+  </style> 
+</head>
+
+
+<body>
+  <div class="FFApp canvas-usable">
+    <!-- Sidebar -->
+    <div class="sidesticky">
+      <a class="sidebar-hide">
+        <i class="bi bi-chevron-left btn-showsidebar" data-bs-toggle="tooltip" data-bs-placement="left"
+          title="Show Features"></i>
+        <i class="bi bi-chevron-right btn-hidesidebar d-none" data-bs-toggle="tooltip" data-bs-placement="left"
+          title="Hide Features"></i>
+      </a>
+      <span class="spacer-small"></span>
+      <span class="sidebar-notifitaion"><em>9</em><i class="bi bi-file-earmark-check"></i></span>
+      <span class="spacer-small"></span>
+      <a class="clearlist pb-1" href="#"><i class="bi bi-trash" data-bs-toggle="tooltip" data-bs-placement="left"
+          title="Clear List"></i></a>
+    </div>
+    <div class="sidebarfeatures slideoff">
+      <div class="sidebarcontent">
+        <div class="sideheading text-center p-4">
+          <h4>Image to PDF</h4>
+           <div class="morefiles d-none"><a href="#" class="up-addfile" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="Add more files"><img src="assets/img/awesome-plus.svg" alt="Addfiles"></a><a href="#" class="up-sortfile"
+              data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sort file list by title"><img
+                src="assets/img/awesome-sort.svg" alt="sortfiles"></a><a href="#" class="up-dropbox" data-bs-toggle="tooltip"
+              data-bs-placement="bottom" title="Upload from Dropbox"><img src="assets/img/dropbox.svg" alt="dropbox"></a><a
+              href="#" class="up-gdrive" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="Upload from gDrive"><img src="assets/img/gdrive.svg" alt="gDrive"></a><a href="#"
+              class="up-link position-relative sidelinkbtn" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="Upload from URL"><img src="assets/img/link.svg" alt="Link" class="img1"><img src="assets/img/awesome-plus.svg"
+                alt="close" class="img2 d-none" style="transform: rotate(45deg);"></a>
+            <div class="popover-tag-side"><input type="url" placeholder="Enter file path/url"
+                class="form-control br-0"><button class="btn btn-warning br-0" type="button"><i
+                  class="bi bi-upload"></i></button></div>
+          </div>
+
+
+        </div> 
+        <div class="ff-comp pt-0">
+        <div class="sidebartab">
+          <nav class="text-start">
+            <div class="nav nav-tabs bordertab" id="side-tab" role="tablist">
+              <button class="nav-link active" id="s1-tab" data-bs-toggle="tab" data-bs-target="#appcomp" type="button" role="tab" aria-controls="appcomp" aria-selected="false"><i
+                class="bi bi-phone"></i> &nbsp; Portrait</button>
+              <button class="nav-link" id="s1-tab" data-bs-toggle="tab" data-bs-target="#appcomp" type="button" role="tab" aria-controls="appcomp" aria-selected="false"><i
+                class="bi bi-phone-landscape"></i> &nbsp; Landscape</button>
+
+              </div></nav>
+        </div>
+
+        <div class="sidebartabcontent text-start overflow-h p-3">
+          <div class="tab-content" id="nav-tabContent">
+          
+          <div class="tab-pane fade show active" id="appcomp" role="tabpanel" aria-labelledby="appcomp-tab">
+                  <h3 class="heading3 mt-3 f-encs font-b">Select page size:</h3>
+                  <select class="form-select" aria-label="Default select example">
+                  <option>Fit (same as image)</option>
+                  <option>Option 2 (same as image)</option>
+                  <option>Option 3 (same as image)</option>
+                  <option>Option 4 (same as image)</option>
+                  <option>Option 5 (same as image)</option>
+                </select>
+                <h3 class="heading3 mt-3 f-encs font-b">Select margins:</h3>
+                <div class="radioboxbtn">
+                  <span><input type="radio" class="form-check-input" name="imageshape" id="nomargin"><label for="nomargin"><i class="bi bi-image-alt"></i> No Margin</label></span>
+                  <span><input type="radio" class="form-check-input" name="imageshape" id="small" checked><label for="small"><i class="bi bi-image"></i> Small</label></span>
+                  <span><input type="radio" class="form-check-input" name="imageshape" id="large"><label for="large"><i class="bi bi-images"></i> Large</label></span>
+                </div>
+
+                
+        </div>
+        </div></div>
+        </div>
+
+        <!-- Sidebar file process Btn -->
+        <div class="text-center p-5 process-box">
+           <a href="#" class="btn-process">Convert to PDF
+            <i class="bi bi-arrow-right ms-5"></i></a>
+        </div>
+
+        <!-- Sidebar file upload box -->
+        <div class="dropfilebox d-none">
+          <label for="more-file-upload" class="dropfiles"><i
+              class="bi bi-arrow-up btn-purple" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add Files"></i> Drop your files here to merge <a href="#" class="cancelupload">Cancel</a></label>
+          <input type="file" class="dropfileinput" id="more-file-upload">
+        </div>
+
+        <div class="processmsg d-none">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            style="margin:0 auto;background:transparent;display:block;" width="84" height="84" viewBox="0 0 100 100"
+            preserveAspectRatio="xMidYMid">
+            <circle cx="50" cy="50" r="30" stroke="#16db93" stroke-width="10" fill="none"></circle>
+            <circle cx="50" cy="50" r="30" stroke="#ea0d59" stroke-width="8" stroke-linecap="round" fill="none">
+              <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite"
+                dur="2.941176470588235s" values="0 50 50;180 50 50;720 50 50" keyTimes="0;0.5;1"></animateTransform>
+              <animate attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.941176470588235s"
+                values="18.84955592153876 169.64600329384882;94.2477796076938 94.24777960769377;18.84955592153876 169.64600329384882"
+                keyTimes="0;0.5;1"></animate>
+            </circle>
+          </svg>
+          <p>Merging PDFs...</p>
+          <a href="#" class="btn-link">Abort Merge</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="heroapp appcontainer">
+      <div class="dottedpattern"></div>
+      <div class="container">
+        <div class="row divcenter">
+          <div class="maincontent">
+            
+
+
+          <div class="manipulatecontent row divcenter">
+            <div class="col-md-12 mb-5">
+              <h2>Free online PDF File Splitter</h2>
+              <p>Split your PDF document conveniently with our file splitting tool online for free</p>
+            </div>
+           
+ 
+         
+      
+      <div class="col-sm-6 col-lg-2">
+        <div class="filebox">
+          <div class="btn-opt">
+            <a href="#" class="rotatebtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
+          </div>
+          <h4>Image 1</h4>
+          <div class="row divcenter">
+          <div class="fileboximg col-md-8 ">
+            <img src="assets/img/pdfscreen.png" alt="Screen">
+            <p>image1.png</p>
+          </div>
+          </div>
+      </div>
+    </div>
+     
+    <div class="col-sm-6 col-lg-2">
+      <div class="filebox">
+        <div class="btn-opt">
+          <a href="#" class="rotatebtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
+          <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
+        </div>
+        <h4>Image 2</h4>
+        <div class="row divcenter">
+        <div class="fileboximg col-md-8 ">
+          <img src="assets/img/pdfscreen.png" alt="Screen">
+          <p>image2.png</p>
+        </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-2">
+    <div class="filebox">
+      <div class="btn-opt">
+        <a href="#" class="rotatebtn"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
+      </div>
+      <h4>Image 3</h4>
+      <div class="row divcenter">
+      <div class="fileboximg col-md-8 ">
+        <img src="assets/img/pdfscreen.png" alt="Screen">
+        <p>image3.png</p>
+      </div>
+      </div>
+  </div>
+</div>
+<div class="col-sm-6 col-lg-2">
+  <div class="filebox">
+    <div class="btn-opt">
+      <a href="#" class="rotatebtn"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
+      <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
+    </div>
+    <h4>Image 4</h4>
+    <div class="row divcenter">
+    <div class="fileboximg col-md-8 ">
+      <img src="assets/img/pdfscreen.png" alt="Screen">
+      <p>image4.png</p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-2">
+  <div class="filebox">
+    <div class="btn-opt">
+      <a href="#" class="rotatebtn"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
+      <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
+    </div>
+    <h4>Image 5</h4>
+    <div class="row divcenter">
+    <div class="fileboximg col-md-8 ">
+      <img src="assets/img/pdfscreen.png" alt="Screen">
+      <p>image5.png</p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-2">
+  <div class="filebox">
+    <div class="btn-opt">
+      <a href="#"  class="rotatebtn"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
+      <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
+    </div>
+    <h4>Image 6</h4>
+    <div class="row divcenter">
+    <div class="fileboximg col-md-8 ">
+      <img src="assets/img/pdfscreen.png" alt="Screen">
+      <p>image6.png</p>
+    </div>
+    </div>
+</div>
+</div>
+
+
+
+ 
+    
+    
+          </div>
+        </div>
+      </div>
+</div>
+
+    </div>
+    <div class="overview section-padding secondary-light" id="overview">
+      <div class="container">
+        <div class="row">
+          <header class="ff-hdr text-center">
+            <div class="pills">OVERVIEW</div>
+            <h2>Merge PDF, Word documents and images</h2>
+            <p>Our document and images joiner allows to combine several files to a single
+              file online and for free. Merge PDF, DOCX, JPG, or any other supported file formats. No third-party
+              software
+              installation is required. Web-based application is fast, robust, easy-to-use and absolutely free. </p>
+          </header>
+          <div class="col-md-4">
+            <i class="bi bi-back gradient-icon"></i>
+            <h3>Merge multi-format files</h3>
+            <p>Conveniently merge your multi-format documents including DOC, PDF, DOCX, PNG,JPG, HTML, TXT and many
+              more.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-save gradient-icon"></i>
+            <h3>Save to desired format</h3>
+            <p>Save your documents to PDF, JPEG, HTML and many other supported formats.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-speedometer2 gradient-icon"></i>
+            <h3>Quick merge operation</h3>
+            <p>Lightning fast merge operations for your selected documents.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-ui-checks-grid gradient-icon"></i>
+            <h3>Combine to a single format</h3>
+            <p>Merge documents belonging to different file formats into a single output
+              format.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-images gradient-icon"></i>
+            <h3>Merge image files</h3>
+            <p>Ability to merge various popular image file formats easily.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-sort-alpha-up gradient-icon"></i>
+            <h3>Reorder merged files</h3>
+            <p class="dark-text">Arrange and reorder the merged files as required.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="howitworks section-padding" id="howitworks">
+      <div class="container">
+        <div class="row divcenter">
+          <div class="col order-lg-2 text-lg-end imageblock-howto"><img src="assets/img/how-to-illustrate.svg" width="500"
+              height="400" alt="How it Works" class="img-fluid"></div>
+          <div class="col">
+            <header class="col ff-hdr text-left">
+              <div class="pills m-0">HOW TO</div>
+              <h2>How to merge documents or images</h2>
+            </header>
+            <ul class="styledlist">
+              <li>Upload files to merge them online.</li>
+              <li>Specify parameters like OCR and the order of files.</li>
+              <li>Press the 'MERGE' button to merge your files.</li>
+              <li>Download the result to view instantly.</li>
+              <li>Send a download link to an email.</li>
+            </ul>
+            <p><a href="#" class="primary-text font-underline">Learn More<i class="bi bi-arrow-right ms-3"></i></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faqs section-padding" id="faqs">
+      <div class="container">
+        <div class="row">
+          <header class="ff-hdr text-center">
+            <div class="pills">FAQs</div>
+            <h2>How to merge Word, PDF, JPG and other files?</h2>
+            <p>Just use our online <a href="#" class="primary-text font-underline">merger</a>. It is fast, easy to use
+              and
+              entirely free. It is designed to quickly merge documents and images online. </p>
+          </header>
+          <div class="col-md-6 text-left">
+            <div class="accordion" id="accordionFaqs">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefaq1" aria-expanded="true" aria-controls="collapsefaq1">
+                    Which formats does your merger support?
+                  </button>
+                </h2>
+                <div id="collapsefaq1" class="accordion-collapse collapse show" aria-labelledby="faq1"
+                  data-bs-parent="#accordionFaqs">
+                  <div class="accordion-body">
+                    We support a variety of document, web, e-book and image file formats, including PDF, DOC, DOCX, RTF,
+                    ODT, HTML, Markdown, PNG, JPG, TIFF, BMP, MOBI, CHM, WPS, TXT and many more.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefaq2" aria-expanded="false" aria-controls="collapsefaq2">
+                    How many files can I merge at a time?
+                  </button>
+                </h2>
+                <div id="collapsefaq2" class="accordion-collapse collapse" aria-labelledby="faq2"
+                  data-bs-parent="#accordionFaqs">
+                  <div class="accordion-body">
+                    You can merge up to 10 files simultaneously
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefaq3" aria-expanded="false" aria-controls="collapsefaq3">
+                    What is the maximum allowed file size for merging?
+                  </button>
+                </h2>
+                <div id="collapsefaq3" class="accordion-collapse collapse" aria-labelledby="faq3"
+                  data-bs-parent="#accordionFaqs">
+                  <div class="accordion-body">
+                    Each file size should not exceed 10 MB.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefaq4" aria-expanded="false" aria-controls="collapsefaq4">
+                    How can I get the merged result?
+                  </button>
+                </h2>
+                <div id="collapsefaq4" class="accordion-collapse collapse" aria-labelledby="faq4"
+                  data-bs-parent="#accordionFaqs">
+                  <div class="accordion-body">
+                    At the end of the merging process, you will get a download link. You can download the result
+                    immediately or send the link to your email.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 text-left mb-5">
+            <div class="accordion" id="accordionFaqs2">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefaq5" aria-expanded="false" aria-controls="collapsefaq4">
+                    For how long are my files stored on your servers?
+                  </button>
+                </h2>
+                <div id="collapsefaq5" class="accordion-collapse collapse" aria-labelledby="faq5"
+                  data-bs-parent="#accordionFaqs2">
+                  <div class="accordion-body">
+                    All user files are stored on Aspose servers for 24 hours. After that time, they will be
+                    automatically
+                    deleted.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq6">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefaq6" aria-expanded="false" aria-controls="collapsefaq6">
+                    Are my files safe on your servers?
+                  </button>
+                </h2>
+                <div id="collapsefaq6" class="accordion-collapse collapse" aria-labelledby="faq6"
+                  data-bs-parent="#accordionFaqs2">
+                  <div class="accordion-body">
+                    Aspose gives the highest importance and attention to security issues. Please be assured that your
+                    files are kept in secure storage servers and protected from any unauthorized access.
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq7">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefaq7" aria-expanded="false" aria-controls="collapsefaq7">
+                    Why does the merging process run so long?
+                  </button>
+                </h2>
+                <div id="collapsefaq7" class="accordion-collapse collapse" aria-labelledby="faq7"
+                  data-bs-parent="#accordionFaqs2">
+                  <div class="accordion-body">
+                    Merging multiple files may be time-consuming sometimes, as it involves data re-encoding and
+                    re-compressing.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mostpopular section-padding" id="mostpopular">
+      <div class="container">
+        <div class="row">
+          <header class="ff-hdr text-center">
+            <div class="pills">MOST POPULAR</div>
+            <h2>The most popular file formats to merge</h2>
+            <p>We support a variety of document, web, e-book and image file formats, including PDF, DOC, DOCX, RTF, ODT,
+              HTML, Markdown, PNG, JPG, TIFF, BMP, MOBI, CHM, WPS, TXT and many more.</p>
+          </header>
+          <div class="popular-links">
+            <a href="#">DOC to one PDF file</a>
+            <a href="#">Merge PDF</a>
+            <a href="#">Merge Image</a>
+            <a href="#">SVG to one PNG file</a>
+            <a href="#">Image to one TXT file</a>
+            <a href="#">Image to one HTML file</a>
+            <a href="#">Merge photo</a>
+            <a href="#">Merge JPG</a>
+            <a href="#">PDF to one JPG file</a>
+            <a href="#">JPG to one PDF file</a>
+            <a href="#">Image to one PDF file</a>
+            <a href="#">PDF to HTML</a>
+            <a href="#">TIFF to one PDF file</a>
+            <a href="#">PNG to one PDF file</a>
+            <a href="#">PDF to one DOC file</a>
+            <a href="#">PDF to MOBI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="backtop" href="#"><i class="bi bi-arrow-up"></i></a>
+
+
+  </div>
+  <div class="smallscreennoapp alert-warning">The app runs on a device with a larger screen (minimum width of 320
+    pixels) aspect ratio.</div>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/custom.js"></script>
+  <script>(function (i, s, o, g, r, a, m) { i['ContainerizeMenuObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.append(a) })(window, document, 'script', 'https://menu-new.containerize.com/scripts/engine.min.js?v=1.0.1', 'fileformat-en');</script>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
+  
+</body>
+
+</html>
