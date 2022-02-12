@@ -9,8 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://www.fileformat.com/templates/fileformat/favicon.ico" rel="shortcut icon"
     type="image/vnd.microsoft.icon" />
-  <link href="assets/css/all.css" rel="stylesheet">
-
+    <link href="assets/css/all.css" rel="stylesheet">
 </head>
 
 
@@ -33,218 +32,70 @@
     <div class="sidebarfeatures slideoff">
       <div class="sidebarcontent">
         <div class="sideheading text-center p-4">
-          <h4>Split PDF</h4>
-          <div class="morefiles d-none"><a href="#" class="up-addfile" data-bs-toggle="tooltip"
-              data-bs-placement="bottom" title="Add more files"><img src="assets/img/awesome-plus.svg"
-                alt="Addfiles"></a><a href="#" class="up-sortfile" data-bs-toggle="tooltip" data-bs-placement="bottom"
-              title="Sort file list by title"><img src="assets/img/awesome-sort.svg" alt="sortfiles"></a><a href="#"
-              class="up-dropbox" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Upload from Dropbox"><img
-                src="assets/img/dropbox.svg" alt="dropbox"></a><a href="#" class="up-gdrive" data-bs-toggle="tooltip"
-              data-bs-placement="bottom" title="Upload from gDrive"><img src="assets/img/gdrive.svg" alt="gDrive"></a><a
-              href="#" class="up-link position-relative sidelinkbtn" data-bs-toggle="tooltip" data-bs-placement="bottom"
-              title="Upload from URL"><img src="assets/img/link.svg" alt="Link" class="img1"><img
-                src="assets/img/awesome-plus.svg" alt="close" class="img2 d-none" style="transform: rotate(45deg);"></a>
+          <h4>Image to PDF</h4>
+           <div class="morefiles d-none"><a href="#" class="up-addfile" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="Add more files"><img src="assets/img/awesome-plus.svg" alt="Addfiles"></a><a href="#" class="up-sortfile"
+              data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sort file list by title"><img
+                src="assets/img/awesome-sort.svg" alt="sortfiles"></a><a href="#" class="up-dropbox" data-bs-toggle="tooltip"
+              data-bs-placement="bottom" title="Upload from Dropbox"><img src="assets/img/dropbox.svg" alt="dropbox"></a><a
+              href="#" class="up-gdrive" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="Upload from gDrive"><img src="assets/img/gdrive.svg" alt="gDrive"></a><a href="#"
+              class="up-link position-relative sidelinkbtn" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="Upload from URL"><img src="assets/img/link.svg" alt="Link" class="img1"><img src="assets/img/awesome-plus.svg"
+                alt="close" class="img2 d-none" style="transform: rotate(45deg);"></a>
             <div class="popover-tag-side"><input type="url" placeholder="Enter file path/url"
                 class="form-control br-0"><button class="btn btn-warning br-0" type="button"><i
                   class="bi bi-upload"></i></button></div>
           </div>
 
 
-        </div>
-
-
-        <div class="sidebartab nopadd">
+        </div> 
+        <div class="ff-comp pt-0">
+        <div class="sidebartab">
           <nav class="text-start">
-            <div class="nav nav-tabs" id="side-tab" role="tablist">
-              <button class="nav-link active" id="s1-tab" data-bs-toggle="tab" data-bs-target="#by-range" type="button"
-                role="tab" aria-controls="by-range" aria-selected="false"><i
-                class="bi bi-layout-split"></i> &nbsp; Split</button>
-              <button class="nav-link" id="s1-tab" data-bs-toggle="tab" data-bs-target="#extract" type="button"
-                role="tab" aria-controls="extract" aria-selected="false"><i
-                class="bi bi-arrow-up-left-square"></i> &nbsp; Extract</button>
+            <div class="nav nav-tabs bordertab" id="side-tab" role="tablist">
+              <button class="nav-link active" id="s1-tab" data-bs-toggle="tab" data-bs-target="#appcomp" type="button" role="tab" aria-controls="appcomp" aria-selected="false"><i
+                class="bi bi-phone"></i> &nbsp; Portrait</button>
+              <button class="nav-link" id="s1-tab" data-bs-toggle="tab" data-bs-target="#appcomp" type="button" role="tab" aria-controls="appcomp" aria-selected="false"><i
+                class="bi bi-phone-landscape"></i> &nbsp; Landscape</button>
 
-            </div>
-          </nav>
+              </div></nav>
         </div>
-        <div class="sidebartabcontent text-start">
+
+        <div class="sidebartabcontent text-start overflow-h p-3">
           <div class="tab-content" id="nav-tabContent">
-
-            <div class="tab-pane fade show active" id="by-range" role="tabpanel" aria-labelledby="by-range-tab">
-              <div class="row align-items-center">
-                <div class="col-md-4 mt-3 f-encs ps-3 font-b">Range mode:</div>
-                <div class="col-md-8 d-flex align-items-center mt-3 text-lg-end rangemode">
-                  <div class="form-checkbox f-encs">
-                    <input class="form-check-input" type="radio" name="radio" id="radio1" checked="checked">
-                    <label class="form-check-label" for="radio1">Custom range</label>
-                  </div>
-                  <div class="form-checkbox">
-                    <input class="form-check-input" type="radio" name="radio" id="radio2">
-                    <label class="form-check-label" for="radio2" checked>Fixed range</label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="range-list-custom" id="customrange">
-                <div class="rangebox col-md-12" data-item-sortable-id="0" draggable="true" role="option"
-                  aria-grabbed="false">
-                  <div class="sortingtag"><i class="bi bi-grip-vertical"></i></div>
-                  <div class="rangetitle col-md-2 px-1">Range 1</div>
-                  <div class="col-md-1 linesep"></div>
-                  <div class="d-flex rangeselector">
-                    <div class="col-md-5">
-                      <label>From Page:</label>
-                      <input type="number" name="range" min="1" max="5" class="form-control" placeholder="1">
-                    </div>
-                    <div class="col-md-5 offset-1">
-                      <label>To Page:</label>
-                      <input type="number" name="range" min="1" max="5" class="form-control" placeholder="2">
-                    </div>
-                  </div>
-                </div>
-                <div class="rangebox col-md-12" data-item-sortable-id="0" draggable="true" role="option"
-                  aria-grabbed="false">
-                  <div class="sortingtag"><i class="bi bi-grip-vertical"></i></div>
-                  <div class="rangetitle col-md-2 px-1">Range 2</div>
-                  <div class="col-md-1 linesep"></div>
-                  <div class="d-flex rangeselector">
-                    <div class="col-md-5">
-                      <label>From Page:</label>
-                      <input type="number" name="range" min="1" max="5" class="form-control" placeholder="1">
-                    </div>
-                    <div class="col-md-5 offset-1">
-                      <label>To Page:</label>
-                      <input type="number" name="range" min="1" max="5" class="form-control" placeholder="2">
-                    </div>
-                  </div>
-                </div>
-                <div class="rangebox col-md-12" data-item-sortable-id="0" draggable="true" role="option"
-                  aria-grabbed="false">
-                  <div class="sortingtag"><i class="bi bi-grip-vertical"></i></div>
-                  <div class="rangetitle col-md-2 px-1">Range 3</div>
-                  <div class="col-md-1 linesep"></div>
-                  <div class="d-flex rangeselector">
-                    <div class="col-md-5">
-                      <label>From Page:</label>
-                      <input type="number" name="range" min="1" max="5" class="form-control" placeholder="1">
-                    </div>
-                    <div class="col-md-5 offset-1">
-                      <label>To Page:</label>
-                      <input type="number" name="range" min="1" max="5" class="form-control" placeholder="2">
-                    </div>
-                  </div>
-                </div>
-                <div class="rangebox col-md-12" data-item-sortable-id="0" draggable="true" role="option"
-                  aria-grabbed="false">
-                  <div class="sortingtag"><i class="bi bi-grip-vertical"></i></div>
-                  <div class="rangetitle col-md-2 px-1">Range 4</div>
-                  <div class="col-md-1 linesep"></div>
-                  <div class="d-flex rangeselector">
-                    <div class="col-md-5">
-                      <label>From Page:</label>
-                      <input type="number" name="range" min="1" max="5" class="form-control" placeholder="1">
-                    </div>
-                    <div class="col-md-5 offset-1">
-                      <label>To Page:</label>
-                      <input type="number" name="range" min="1" max="5" class="form-control" placeholder="2">
-                    </div>
-                  </div>
-                </div>
-                <div class="addrange"><a href="#"><img src="assets/img/awesome-plus.svg"> Add another range</a></div>
-              </div>
-
-
-              <div class="range-list-fixed d-none">
-                <div class="rangefixedbox">
-                  <div class="row align-items-center">
-                    <div class="col-md-8 f-encs">
-                      Split pages in ranges of:
-                    </div>
-                    <div class="col-md-4">
-                      <input type="number" name="range" min="1" max="5" class="form-control" placeholder="2">
-                    </div>
-                  </div>
-                </div>
-                <p class="notifybox">This PDF will be split in files of 1 page(s). A total of <b>10 PDF</b> file(s) will
-                  be created.</p>
-
-              </div>
-
-              <div class="d-flex divcenter mb-2">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label ms-1" for="flexCheckDefault">
-                  Merge all ranges in a single PDF file
-                </label>
-              </div>
-
-            </div>
-
-
-            <div class="tab-pane fade" id="extract" role="tabpanel" aria-labelledby="extract-tab">
-              <div class="row align-items-center ">
-                <div class="col-md-4 mt-3 f-encs ps-3 font-b">Extract Mode:</div>
-                <div class="col-md-8 d-flex align-items-center mt-3 text-lg-end extractmode">
-                  <div class="form-checkbox f-encs">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radio3"
-                      checked="checked">
-                    <label class="form-check-label" for="radio3">Extract all pages</label>
-                  </div>
-                  <div class="form-checkbox">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radio4">
-                    <label class="form-check-label" for="radio4" checked>Select Pages</label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="extract-all">
-                <p class="notifybox">Every selected page of this PDF file will be converted in one separated PDF file.
-                  <b>0 PDF</b> will be created.</p>
-
-              </div>
-              <div class="extract-select d-none">
-                <div class="rangefixedbox">
-                  <div class="row align-items-center">
-                    <div class="col-md-8 f-encs">
-                      Pages to extract:
-                    </div>
-                    <div class="col-md-4">
-                      <input type="text" class="form-control" placeholder="1,2-6">
-                    </div>
-                  </div>
+          
+          <div class="tab-pane fade show active" id="appcomp" role="tabpanel" aria-labelledby="appcomp-tab">
+                  <h3 class="heading3 mt-3 f-encs font-b">Select page size:</h3>
+                  <select class="form-select" aria-label="Default select example">
+                  <option>Fit (same as image)</option>
+                  <option>Option 2 (same as image)</option>
+                  <option>Option 3 (same as image)</option>
+                  <option>Option 4 (same as image)</option>
+                  <option>Option 5 (same as image)</option>
+                </select>
+                <h3 class="heading3 mt-3 f-encs font-b">Select margins:</h3>
+                <div class="radioboxbtn">
+                  <span><input type="radio" class="form-check-input" name="imageshape" id="nomargin"><label for="nomargin"><i class="bi bi-image-alt"></i> No Margin</label></span>
+                  <span><input type="radio" class="form-check-input" name="imageshape" id="small" checked><label for="small"><i class="bi bi-image"></i> Small</label></span>
+                  <span><input type="radio" class="form-check-input" name="imageshape" id="large"><label for="large"><i class="bi bi-images"></i> Large</label></span>
                 </div>
 
-              </div>
-
-              <div class="d-flex divcenter mb-2">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label ms-1" for="flexCheckDefault">
-                  Merge extracted pages into a single PDF file
-                </label>
-              </div>
-
-
-
-
-
-
-
-
-
-            </div>
-
-          </div>
+                
+        </div>
+        </div></div>
         </div>
 
         <!-- Sidebar file process Btn -->
         <div class="text-center p-5 process-box">
-          <a href="#" class="btn-process">Split PDF
+           <a href="#" class="btn-process">Convert to PDF
             <i class="bi bi-arrow-right ms-5"></i></a>
         </div>
 
         <!-- Sidebar file upload box -->
         <div class="dropfilebox d-none">
-          <label for="more-file-upload" class="dropfiles"><i class="bi bi-arrow-up btn-purple" data-bs-toggle="tooltip"
-              data-bs-placement="bottom" title="Add Files"></i> Drop your files here to merge <a href="#"
-              class="cancelupload">Cancel</a></label>
+          <label for="more-file-upload" class="dropfiles"><i
+              class="bi bi-arrow-up btn-purple" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add Files"></i> Drop your files here to merge <a href="#" class="cancelupload">Cancel</a></label>
           <input type="file" class="dropfileinput" id="more-file-upload">
         </div>
 
@@ -272,363 +123,119 @@
       <div class="container">
         <div class="row divcenter">
           <div class="maincontent">
-            <div class="staticmain d-none">
-              <div class="addfilesection">
-                <h1>Free Online Document and PDF Splitter</h1>
-                <p>Split Word, PDF, JPG, MD files into one with our splitter tool online for free.</p>
-                <small class="muted-text f-encs">Powered by <a href="https://www.aspose.com/"
-                    class="muted-text">aspose.com</a> and <a href="https://www.aspose.cloud/"
-                    class="muted-text">aspose.cloud</a></small>
-                <div class="btn-box">
-                  <label for="file-upload" class="btn-file-upload"> <i class="bi bi-plus"></i> Drop or Upload your
-                    files</label>
-                  <input id="file-upload" type="file" />
-                  <div class="uploadsystems"><a href="#" class="up-dropbox" data-bs-toggle="tooltip"
-                      data-bs-placement="bottom" title="Upload from DropBox"><img src="assets/img/dropbox.svg"
-                        alt="DropBox"></i></a><a href="#" class="up-gdrive" data-bs-toggle="tooltip"
-                      data-bs-placement="bottom" title="Upload from gDrive"><img src="assets/img/gdrive.svg"
-                        alt="gDrive"></i></a>
-                    <div class="main-uplink d-inline-block position-relative"><a href="#" class="up-link"
-                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Upload from URL"><img
-                          src="assets/img/link.svg" alt="Link" class="img1"><img src="assets/img/awesome-plus.svg"
-                          alt="close" class="img2 d-none" style="transform: rotate(45deg);"></a>
-                    </div>
-
-                  </div>
-                  <div class="popover-tag" id="uploadfilepath">
-                    <form><input type="url" placeholder="Enter file path/url" class="form-control br-0"><button
-                        class="btn btn-warning br-0" type="button"><i class="bi bi-upload"></i></button></form>
-                  </div>
-                </div>
-
-                <small class="muted-text f-encs">By uploading your files or using our service you agree with our
-                  <a href="https://about.aspose.app/legal/tos" class="muted-text">Terms of Service</a> and <a
-                    href="https://about.aspose.app/legal/privacy-policy" class="muted-text">Privacy Policy</a>.</small>
-              </div>
-
-              <div class="progressbar d-none">
-                <div class="container">
-                  <div class="col-lg-6 m-auto">
-                    <h2>Please wait your files are in process</h2>
-                    <div class="prog-bar">
-                      <span style="width: 80%"></span>
-                    </div>
-                    <div class="alert-danger"><i class="bi bi-x-circle-fill me-2"></i> File does not support to be
-                      processed. Please try different file format.</div>
-
-                    <div class="alert-success"><i class="bi bi-check-circle-fill me-2"></i> File does not support to be
-                      processed. Please try different file format.</div>
-                  </div>
-                </div>
-              </div>
-              <div class="fileprocessdownload text-center d-none">
-                <h2>PDFs have been splits!</h2>
-                <a href="#" class="btn-file-download"><i class="bi bi-download"></i> Download split PDF</a>
-                <div class="col-lg-6 m-auto">
-                  <div class="moreappsicons">
-                    <div class="col">
-                      <p>Send result to:</p>
-                      <a href="#"><i class="bi bi-lock"></i></a>
-                      <a href="#"><i class="bi bi-pencil-square"></i></a>
-                      <a href="#"><i class="bi bi-file-zip"></i></a>
-                      <a href="#"><i class="bi bi-arrow-clockwise"></i></a>
-                      <a href="#" class="email-link"><i class="bi bi-envelope email1"></i><i
-                          class="bi bi-plus-circle email2 d-none"></i></a>
-                      <div class="popover-tag" id="emailfilepath">
-                        <form><input type="url" placeholder="Enter email address" class="form-control br-0"><button
-                            class="btn btn-warning br-0" type="button"><i class="bi bi-send"></i></button></form>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <p>Share file:</p>
-                      <a href="#"><i class="bi bi-facebook"></i></a> <a href="#"><i class="bi bi-twitter"></i></a>
-                      <a href="#"><i class="bi bi-whatsapp"></i></a> <a href="#"><i class="bi bi-instagram"></i></a>
-                      <a href="#" class="share-file-link"><i class="bi bi-share slink1"></i><i
-                          class="bi bi-plus-circle slink2 d-none"></i></a>
-                      <div class="popover-tag" id="sharefilepath">
-                        <form><input type="url" placeholder="Share file URL" class="form-control br-0"><button
-                            class="btn btn-warning br-0" type="button"><i class="bi bi-clipboard"></i></button></form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a href="#" class="btn-startover">Start Over</a>
+            
 
 
-              </div>
-              <div class="apibox">
-                <div class="apiboxcontent">Works with:<br>
-                  <a href="#">Developer APIs</a> | <a href="#">Cloud APIs</a>
-                </div>
-                <div class="apiboxcontent">See the source code in:<br>
-                  <a href="#">Python</a> | <a href="#">Java</a> |
-                  <a href="#">C#</a> | <a href="#">C++</a>
-                </div>
-              </div>
-              <div class="storebtns">
-                <a href=""><img src="assets/img/btn-googleplay.svg" width="174" height="54"
-                    alt="Aspose GooglePlay Badge"></a> <a href=""><img src="assets/img/btn-applestore.svg" width="174"
-                    height="54" alt="Aspose AppStore Badge"></a>
-              </div>
+          <div class="manipulatecontent row divcenter">
+            <div class="col-md-12 mb-5">
+              <h2>Free online PDF File Splitter</h2>
+              <p>Split your PDF document conveniently with our file splitting tool online for free</p>
             </div>
-
-
-            <div class="manipulatecontent row divcenter">
-              <div class="col-md-12 mb-5">
-                <h2>Free online PDF File Splitter</h2>
-                <p>Split your PDF document conveniently with our file splitting tool online for free</p>
-              </div>
-
-              <div class="col-sm-6 col-lg-2">
-                <div class="filebox-dotted">
-                  <h4>Range 1</h4>
-                  <div class="row divcenter">
-                    <div class="filebox-dottedimg col-md-5 ">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>Page 1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-2">
-                <div class="filebox-dotted">
-                  <h4>Range 2</h4>
-                  <div class="row divcenter">
-                    <div class="filebox-dottedimg col-md-5 ">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>Page 1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-2">
-                <div class="filebox-dotted">
-                  <h4>Range 3</h4>
-                  <div class="row divcenter">
-                    <div class="filebox-dottedimg col-md-5 ">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>Page 1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-2">
-                <div class="filebox-dotted">
-                  <h4>Range 4</h4>
-                  <div class="row divcenter">
-                    <div class="filebox-dottedimg col-md-5 ">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>Page 1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-2">
-                <div class="filebox-dotted">
-                  <h4>Range 5</h4>
-                  <div class="row divcenter">
-                    <div class="filebox-dottedimg col-md-5 ">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>Page 1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-2">
-                <div class="filebox-dotted">
-                  <h4>Range 6</h4>
-                  <div class="row divcenter">
-                    <div class="filebox-dottedimg col-md-5 ">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>Page 1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-3">
-                <div class="filebox">
-                  <h4>Range 1</h4>
-                  <div class="row divcenter">
-                    <div class="fileboximg col-md-5 ">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>Page 1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="col-sm-6 col-lg-3">
-                <div class="filebox">
-                  <h4>Range 2</h4>
-                  <div class="row divcenter">
-                    <div class="fileboximg col-md-5 ">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>Page 1</p>
-                    </div>
-                    <div class="col-md-1">
-                      <i class="bi bi-three-dots"></i>
-                    </div>
-                    <div class="fileboximg col-md-5">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>Page 4</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-3">
-                <div class="filebox">
-                  <h4>Range 3</h4>
-                  <div class="row divcenter">
-                    <div class="fileboximg col-md-5 ">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>Page 1</p>
-                    </div>
-                    <div class="col-md-1">
-                      <i class="bi bi-three-dots"></i>
-                    </div>
-                    <div class="fileboximg col-md-5">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>Page 4</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-3">
-                <div class="filebox">
-                  <h4>Range 4</h4>
-                  <div class="row divcenter">
-                    <div class="fileboximg col-md-5 ">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>Page 1</p>
-                    </div>
-                    <div class="col-md-1">
-                      <i class="bi bi-three-dots"></i>
-                    </div>
-                    <div class="fileboximg col-md-5">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>Page 4</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-2">
-                <div class="filebox">
-                  <div class="btn-opt">
-                    <a href="#" class="rotatebtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
-                      data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
-                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
-                      data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
-                  </div>
-                  <h4>Image 1</h4>
-                  <div class="row divcenter">
-                    <div class="fileboximg col-md-8 ">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>image1.png</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-2">
-                <div class="filebox">
-                  <div class="btn-opt">
-                    <a href="#" class="rotatebtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
-                      data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
-                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
-                      data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
-                  </div>
-                  <h4>Image 2</h4>
-                  <div class="row divcenter">
-                    <div class="fileboximg col-md-8 ">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>image2.png</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-2">
-                <div class="filebox ">
-                  <div class="btn-opt">
-                    <a href="#" class="rotatebtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
-                      data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
-                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
-                      data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
-                  </div>
-                  <h4>Image 3</h4>
-                  <div class="row divcenter">
-                    <div class="fileboximg col-md-8 ">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>image3.png</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-2">
-                <div class="filebox ">
-                  <div class="btn-opt">
-                    <a href="#" class="rotatebtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
-                      data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
-                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
-                      data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
-                  </div>
-                  <h4>Image 4</h4>
-                  <div class="row divcenter">
-                    <div class="fileboximg col-md-8 ">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>image4.png</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-2">
-                <div class="filebox ">
-                  <div class="btn-opt">
-                    <a href="#" class="rotatebtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
-                      data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
-                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
-                      data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
-                  </div>
-                  <h4>Image 5</h4>
-                  <div class="row divcenter">
-                    <div class="fileboximg col-md-8 ">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>image5.png</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-2">
-                <div class="filebox">
-                  <div class="btn-opt">
-                    <a href="#" class="rotatebtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
-                      data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
-                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
-                      data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
-                  </div>
-                  <h4>Image 6</h4>
-                  <div class="row divcenter">
-                    <div class="fileboximg col-md-8 ">
-                      <img src="assets/img/pdfscreen.png" alt="Screen">
-                      <p>image6.png</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+           
+ 
+         
+      
+      <div class="col-sm-6 col-lg-2">
+        <div class="filebox">
+          <div class="btn-opt">
+            <a href="#" class="rotatebtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
+          </div>
+          <h4>Image 1</h4>
+          <div class="row divcenter">
+          <div class="fileboximg col-md-8 ">
+            <img src="assets/img/pdfscreen.png" alt="Screen">
+            <p>image1.png</p>
+          </div>
+          </div>
+      </div>
+    </div>
+     
+    <div class="col-sm-6 col-lg-2">
+      <div class="filebox">
+        <div class="btn-opt">
+          <a href="#" class="rotatebtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
+          <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
+        </div>
+        <h4>Image 2</h4>
+        <div class="row divcenter">
+        <div class="fileboximg col-md-8 ">
+          <img src="assets/img/pdfscreen.png" alt="Screen">
+          <p>image2.png</p>
+        </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-2">
+    <div class="filebox">
+      <div class="btn-opt">
+        <a href="#" class="rotatebtn"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
+      </div>
+      <h4>Image 3</h4>
+      <div class="row divcenter">
+      <div class="fileboximg col-md-8 ">
+        <img src="assets/img/pdfscreen.png" alt="Screen">
+        <p>image3.png</p>
+      </div>
+      </div>
+  </div>
+</div>
+<div class="col-sm-6 col-lg-2">
+  <div class="filebox">
+    <div class="btn-opt">
+      <a href="#" class="rotatebtn"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
+      <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
+    </div>
+    <h4>Image 4</h4>
+    <div class="row divcenter">
+    <div class="fileboximg col-md-8 ">
+      <img src="assets/img/pdfscreen.png" alt="Screen">
+      <p>image4.png</p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-2">
+  <div class="filebox">
+    <div class="btn-opt">
+      <a href="#" class="rotatebtn"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
+      <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
+    </div>
+    <h4>Image 5</h4>
+    <div class="row divcenter">
+    <div class="fileboximg col-md-8 ">
+      <img src="assets/img/pdfscreen.png" alt="Screen">
+      <p>image5.png</p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-2">
+  <div class="filebox">
+    <div class="btn-opt">
+      <a href="#"  class="rotatebtn"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Rotate" aria-label="Rotate"><i class="bi bi-arrow-repeat"></i></a>
+      <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Remove" aria-label="Remove"><i class="bi bi-trash"></i></a>
+    </div>
+    <h4>Image 6</h4>
+    <div class="row divcenter">
+    <div class="fileboximg col-md-8 ">
+      <img src="assets/img/pdfscreen.png" alt="Screen">
+      <p>image6.png</p>
+    </div>
+    </div>
+</div>
+</div>
 
 
 
-
-
-
-            </div>
+ 
+    
+    
           </div>
         </div>
       </div>
+</div>
 
     </div>
     <div class="overview section-padding secondary-light" id="overview">
@@ -682,8 +289,8 @@
     <div class="howitworks section-padding" id="howitworks">
       <div class="container">
         <div class="row divcenter">
-          <div class="col order-lg-2 text-lg-end imageblock-howto"><img src="assets/img/how-to-illustrate.svg"
-              width="500" height="400" alt="How it Works" class="img-fluid"></div>
+          <div class="col order-lg-2 text-lg-end imageblock-howto"><img src="assets/img/how-to-illustrate.svg" width="500"
+              height="400" alt="How it Works" class="img-fluid"></div>
           <div class="col">
             <header class="col ff-hdr text-left">
               <div class="pills m-0">HOW TO</div>
@@ -869,8 +476,8 @@
   </div>
   <div class="smallscreennoapp alert-warning">The app runs on a device with a larger screen (minimum width of 320
     pixels) aspect ratio.</div>
-  <script src="assets/js/all.js"></script>
-  <script src="assets/js/custom.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/custom.js"></script>
   <script>(function (i, s, o, g, r, a, m) { i['ContainerizeMenuObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.append(a) })(window, document, 'script', 'https://menu-new.containerize.com/scripts/engine.min.js?v=1.0.1', 'fileformat-en');</script>
   <script>
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -882,13 +489,7 @@
       return new bootstrap.Popover(popoverTriggerEl)
     })
   </script>
-  <style>
-    .fileformat .venturelogo a {
-      width: 200px !important;
-      margin-top: 10px !important;
-      background-size: 200px !important;
-    }
-  </style>
+  
 </body>
 
 </html>
